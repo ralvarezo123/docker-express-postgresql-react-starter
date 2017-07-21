@@ -73,6 +73,11 @@ root@[SERVER_CONTAINER_ID$ npm run build:frontend:tests
 root@[SERVER_CONTAINER_ID$ npm run run:frontend:tests
 ```
 ## Enter PostgreSql
+To run PostgreSql
+```
+$ docker pull postgres
+$ docker run --name pg-dse -e POSTGRES_PASSWORD=passwrd -e POSTGRES_USER=pg -e POSTGRES_DB=dse -d postgres
+```
 ```
 $ docker ps
 $ docker exec -it [POSTGRES_CONTAINER_ID] /bin/bash
